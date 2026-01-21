@@ -1,18 +1,44 @@
 #include <stdio.h>
+#include "triang.h"
+#define MAX_SIZE 100
+#define MIN_SIZE 1
+
+int Check_parameters(int n, char ch)
+{
+  	if (n > MAX_SIZE || n < MIN_SIZE )
+	{
+		return SIZE_ERROR;
+	}
+	if (ch < '!' || ch > '~')
+	{
+		return	CHAR_TO_PRINT_ERROR;
+	}
+	return OK; 
+  
+}
+int Print_line(int length ,char ch)
+{
+	  for (int j = 0 ; j < length ;j++ )
+	  {
+            printf("%c",ch);
+	  }
+      printf("\n");
+}
 
 int Print_left_aligned_triangle(int n, char ch)
 {
-int i,j;
+  int result = Check_parameters(n,ch;
+	if (result != OK)
+	{
+		return result;
+	
+  int i,j;
 
   for(i=0; i<=n; ++i)
   {
-    for(j=0;j<i;j++)
-    {
-      printf("%c",ch);
-    }
-    printf("\n");
+		Print_line(i , ch);
   } 
-  return 0;
+  return OK;
 }
 
 void func2(int n, char ch)
