@@ -10,7 +10,7 @@
   error - SIZE_ERROR or CHAR_TO_PRINT_ERROR
 */
 
-void Print_left_aligned_triangle(int n, char ch);
+int Print_left_aligned_triangle(int n, char ch);
 void func2(int n, char ch);
 void func3(int n, char ch);
 void func4(int n, char ch);
