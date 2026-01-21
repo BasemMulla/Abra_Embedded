@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void func1(int n, char ch)
+int Print_left_aligned_triangle(int n, char ch)
 {
 int i,j;
 
@@ -12,6 +12,7 @@ int i,j;
     }
     printf("\n");
   } 
+  return 0;
 }
 
 void func2(int n, char ch)
