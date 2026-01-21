@@ -5,7 +5,7 @@
 int main(void)
 {
   
-  func1(6,'*');
+  Print_left_aligned_triangle(6,'*');
   
   printf("\n");
   func2(6,'*');
